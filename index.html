@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta property="og:site_name" content="Hex // Ryan O'Connor"/>
+		<meta property="og:site_name" content="Hex"/>
 		<meta property="og:description" content="Get a random Hex/RGB colour"/>
-		<meta property="og:image" content="img/fb.png">
-		<meta property="og:url" content="http://ryanoconr.com/hex">
 		<meta property="og:type" content="utility"/>
-		<title>Hex // ryanoconr</title>
+		<title>Hex</title>
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/png" href="../main/img/logo.png" />
@@ -17,9 +15,6 @@
 		<script src="js/customRGB.js"></script>
 		<script src="js/customHex.js"></script>
 		<script>
-			function home(){
-				window.location.href = "http://ryanoconr.com";
-			}
 			window.onload = function() {
 				$('#loading').fadeIn();
 				setTimeout(function() {
@@ -36,7 +31,7 @@
 	<body>
 		<div id="loading"></div>
 		<div class="container" id="page">
-			<div class="home" onmousedown="home()">&#xf0e7;</div>
+			<a href="http://github.com/ryanoconr"><div class="home">ryanoconr</div></a>
 			<div class="colorCodes">
 				<div class="err" onmousedown="return false"></div>
 				<input type="text" class="field" id="rgb" onkeyup="customRGB()" /><br />
